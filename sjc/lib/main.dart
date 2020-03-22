@@ -50,6 +50,7 @@ class _MyHomePageState extends State<MyHomePage> {
                   ),
                 );
               } else if (snapshot.hasError) {
+                print(snapshot.error.toString());
                 return _centerView(const Text("no internet connection"));
               } else {
                 return _centerView(const Text("empty"));
